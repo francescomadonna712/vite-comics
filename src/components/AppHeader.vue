@@ -75,7 +75,7 @@ export default {
     padding: 0 15rem;
     display: flex;
     flex-direction: row;
-    height: 20vh;
+    height: 18vh;
 }
     
 .header{
