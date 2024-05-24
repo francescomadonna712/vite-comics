@@ -1,5 +1,14 @@
 <script>
+export default {
+    name: "AppBluBar",
+    data(){
+      return{
+        
+        
 
+      }
+    }
+  }
 
 
 </script>
@@ -37,11 +46,14 @@
 
 <style scoped>
 .container-blu {
+    padding-left: 17rem;
+    padding-right: 17rem;
     background-color: #0282F9;
-    height: 7rem;
+    height: 6rem;
 }
 
 .icon-section {
+    
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
@@ -57,11 +69,11 @@
 }
 
 .icon-item img {
-    height: 50px;
-    margin-bottom: 10px;
+    height: 40px;
+   padding-right: 1rem;
 }
 
 .icon-item span {
-    font-size: 14px;
+    font-size: 12px;
 }
 </style>

@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: "AppHeader",
     data(){
       return{
         
@@ -75,7 +76,7 @@ export default {
     padding: 0 15rem;
     display: flex;
     flex-direction: row;
-    height: 18vh;
+    height: 15vh;
 }
     
 .header{
@@ -94,10 +95,21 @@ export default {
 
 .menu-item{
     color: rgb(110, 109, 109);
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 13px;
 }
+.menu-item:hover{
+    border-bottom: solid 4px #0282F9;
+    
+  }
+
 .logo{
-    margin: 0.5rem;
+    margin-top: 1rem;
+    
+}
+.logo img{
+    height: 80%;
+    
 }
 
 </style>

@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: "AppFooter",
     data() {
 
         return {
@@ -122,7 +123,7 @@ export default {
     justify-content: space-between;
     padding-left: 17rem;
     padding-top: 2rem;
-    color: white;
+    color: rgb(190, 190, 190);
     width: 50%;
 }
 
@@ -132,6 +133,7 @@ export default {
 }
 
 .menu h2 {
+    color: white;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
