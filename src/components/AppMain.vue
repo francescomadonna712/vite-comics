@@ -1,5 +1,14 @@
 <script>
+
+import Card from "./Card.vue";
+
+
 export default {
+
+    components: {
+        Card,
+    },
+
     name: "AppMain",
     data() {
         return {
@@ -89,14 +98,23 @@ export default {
 <template>
     <div class="jumbo">
     </div>
-        <!-- card -->
+    <!-- card -->
+    <button class="fake-btn">CURRENT SERIES</button>
+
     <div class="container-main">
-        <button class="fake-btn">CURRENT SERIES</button>
-
-
-
-
+        <ul class="fumetti">
+            <Card v-for="(comic, i) in fumetti" :key="i" :thumb="comic.thumb" :series="comic.series" />
+        </ul>
     </div>
+    <div class="load-button">
+        <button class="custom-button">LOAD MORE</button>
+    </div>
+
+
+
+
+
+
 </template>
 
 <style scoped>
@@ -107,26 +125,49 @@ export default {
     width: 100;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
+
 .container-main {
     height: 35rem;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #1C1C1C;
     align-content: center;
     font-weight: bold;
 }
 
-.fake-btn{
+.fake-btn {
     position: absolute;
     top: 25rem;
     left: 16rem;
     padding: 0.7rem;
     color: white;
-    background-color:#0282F9;
+    background-color: #0282F9;
     font-weight: bold;
     border: none;
 }
 
+.fumetti {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
 
+.load-button {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-button{
+    color: white;
+    background-color: #0282F9;
+    font-weight: bold;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin-bottom: 1rem;
+}
 </style>
