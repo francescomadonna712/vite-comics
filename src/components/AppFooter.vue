@@ -58,6 +58,7 @@ export default {
 <!---------------------------------- HTML ---------------------------------->
 <template>
     <div class="container-footer">
+        
         <!-- link footer -->
         <div class="col-link">
 
